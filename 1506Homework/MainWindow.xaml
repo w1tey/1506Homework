@@ -1,0 +1,30 @@
+﻿<Window x:Class="_1506Homework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1506Homework"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="GetButton" Grid.Column="0" Grid.Row="1" FontSize="25" Content="Get" HorizontalAlignment="Center" VerticalAlignment="Center" Click="GetBtn" Height="180" Width="225"/>
+        <Button x:Name="UpdateButton" Grid.Column="1" Grid.Row="1" FontSize="25" Content="Update" HorizontalAlignment="Center" VerticalAlignment="Center" Height="181" Width="225" Click="UpdateBtn"/>
+        
+        <ComboBox x:Name="ComboBox" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="DataGrid" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>
+
